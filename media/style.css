@@ -11,6 +11,11 @@ body {
   overflow: hidden;
 }
 
+svg {
+  fill: #000;
+  stroke: #000;
+}
+
 .gutter {
   background-color: var(--bg-2);
   background-repeat: no-repeat;
