@@ -41,9 +41,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5vw;
-  height: 5vw;
+  width: 4vw;
+  height: 4vw;
   border-radius: 0.5rem;
   background-color: var(--bg-3);
+  font-size: 150%;
   font-family: Bravura, Lexend, Arial;
 }
