@@ -33,7 +33,11 @@ nav {
   background-color: var(--bg-2);
 }
 #left > div, #right > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 5vw;
   height: 5vw;
-  background-color: var(--bg-3);
+  border-radius: 0.5rem;
+  background: var(--bg-3);
 }
