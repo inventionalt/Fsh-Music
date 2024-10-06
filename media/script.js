@@ -1,5 +1,5 @@
 Split(['#left', '#staff', '#right'], {
-  sizes: [20, 60, 20]
+  sizes: [10, 80, 10]
 })
 
 // Create renderer
