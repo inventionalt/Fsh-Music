@@ -23,6 +23,7 @@ nav {
 
 .contain {
   display: flex;
+  height: 95vh;
 }
 #left, #right {
   background-color: var(--bg-2);
