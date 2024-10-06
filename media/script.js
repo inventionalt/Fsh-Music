@@ -6,7 +6,7 @@ Split(['#left', '#staff', '#right'], {
 VexFlow.setFonts('Leland', 'Bravura');
 let { Factory } = VexFlow;
 const vf = new Factory({
-  renderer: { elementId: 'output', width: 500, height: 200 },
+  renderer: { elementId: 'staff', width: 500, height: 200 },
 });
 
 const score = vf.EasyScore();
