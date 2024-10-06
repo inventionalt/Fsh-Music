@@ -26,5 +26,14 @@ nav {
   height: 95vh;
 }
 #left, #right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-content: flex-start;
   background-color: var(--bg-2);
+}
+#left > div, #right > div {
+  width: 5vw;
+  height: 5vw;
+  background-color: var(--bg-3);
 }
