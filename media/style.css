@@ -12,8 +12,8 @@ body {
 }
 
 svg {
-  fill: #000;
-  stroke: #000;
+  fill: var(--bg-0);
+  stroke: var(--bg-0);
 }
 
 .gutter {
@@ -52,4 +52,9 @@ nav {
   background-color: var(--bg-3);
   font-size: 150%;
   font-family: Bravura, Lexend, Arial;
+}
+
+#staff {
+  border-radius: 1rem;
+  background-color: var(--text-0);
 }
