@@ -3,7 +3,7 @@ Split(['#left', '#staff', '#right'], {
 })
 
 // Create renderer
-VexFlow.setFonts('Leland', 'Bravura');
+VexFlow.setFonts('Bravura');
 let { Factory } = VexFlow;
 const vf = new Factory({
   renderer: { elementId: 'staff', width: 500, height: 200 },
