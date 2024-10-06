@@ -1,8 +1,4 @@
 @font-face {
-  font-family: 'Leland';
-  src: url(/media/fonts/leland.woff2) format(woff2);
-}
-@font-face {
   font-family: 'Bravura';
   src: url(/media/fonts/bravura.woff2) format(woff2);
 }
@@ -49,5 +45,5 @@ nav {
   height: 5vw;
   border-radius: 0.5rem;
   background-color: var(--bg-3);
-  font-family: Leland, Bravura, Lexend, Arial;
+  font-family: Bravura, Lexend, Arial;
 }
