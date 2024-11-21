@@ -1,8 +1,11 @@
 @font-face {
   font-family: 'Bravura';
-  src: url(/media/fonts/bravura.woff2) format(woff2);
+  src: url(./fonts/bravura.woff2) format(woff2);
 }
-
+@font-face {
+  font-family: 'Leland';
+  src: url(./fonts/leland.woff2) format(woff2);
+}
 body {
   width: 100vw;
   width: 100dvw;
@@ -10,10 +13,13 @@ body {
   height: 100dvh;
   overflow: hidden;
 }
-
-svg {
+#staff {
   fill: var(--bg-0);
   stroke: var(--bg-0);
+  color: var(--bg-0);
+  background-color: var(--text-0);
+  width: fit-content;
+  border-radius: 1rem;
 }
 
 .gutter {
@@ -52,9 +58,4 @@ nav {
   background-color: var(--bg-3);
   font-size: 150%;
   font-family: Bravura, Lexend, Arial;
-}
-
-#staff {
-  border-radius: 1rem;
-  background-color: var(--text-0);
 }
