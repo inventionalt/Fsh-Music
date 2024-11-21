@@ -17,9 +17,15 @@ body {
   fill: var(--bg-0);
   stroke: var(--bg-0);
   color: var(--bg-0);
-  background-color: var(--text-0);
   width: fit-content;
-  border-radius: 1rem;
+  padding: 5px;
+  border-radius: 0.5rem;
+  background-color: var(--text-0);
+}
+svg {
+  fill: var(--bg-0);
+  stroke: var(--bg-0);
+  color: var(--bg-0);
 }
 
 .gutter {
