@@ -106,7 +106,7 @@ export class FMusic {
           content += `<text x="${this.size+i*this.size}" y="${this.size*-0.745}" font-size="${this.size}" font-family="${this.font}">${c[1][0].split('').map(e=>`&#xE08${e}`).join('')}</text><text x="${this.size+i*this.size}" y="${this.size*-0.254}" font-size="${this.size}" font-family="${this.font}">${c[1][1].split('').map(e=>`&#xE08${e}`).join('')}</text>`;
           break;
         case 'n':
-          content += `<text x="${this.size+i*this.size}" y="${(c[1][0]=='d'?4:c[1][1])*(this.size*-0.125)}" font-size="${this.size}" font-family="${this.font}">${this.sym.note[c[1][0]+(this.nsdAuto && c[1][1]>this.nsdAt?'d':'')]??'?'}</text>`;
+          content += `<text x="${this.size+i*this.size}" y="${(c[1][0]=='d'?4:c[1][1])*(this.size*-0.125)}" font-size="${this.size}" font-family="${this.font}">${this.sym.note[c[1][0]+(this.nsdAuto && c[1][1]>this.nsdAt?'d':'')]??'?'}${c[1][2]=='d'?'\uE1E7':''}</text>`;
           break;
         default:
           content += `<text x="${this.size+i*this.size}" y="0" font-size="${this.size}" font-family="${this.font}">?</text>`;
