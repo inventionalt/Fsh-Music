@@ -1,28 +1,20 @@
+import { FMusic } from './engine.js'
+
+// Dynamic splits
 Split(['#left', '#staff', '#right'], {
   sizes: [10, 80, 10]
 })
 
-// Create renderer
-VexFlow.setFonts('Bravura');
-let { Factory } = VexFlow;
-const vf = new Factory({
-  renderer: { elementId: 'staff', width: 500, height: 200 },
+// Create engine
+let engine = new FMusic();
+
+engine.setTrack(0, {
+  clef: 'g',
+  text: 'Piano',
+  inner: 't:4/4,n:w/6,b,n:h/7,n:h/6,b,n:q/4/d,n:q/5/d,n:q/4,b,n:sw/4'
 });
 
-const score = vf.EasyScore();
-const system = vf.System();
-
-system
-  .addStave({
-    voices: [
-      score.voice(score.notes('C#5/q, B4, A4, G#4', { stem: 'up' })),
-      score.voice(score.notes('C#4/h, C#4', { stem: 'down' })),
-    ],
-  })
-  .addClef('treble')
-  .addTimeSignature('4/4');
-
-vf.draw();
+engine.paint('staff')
 
 /*
 let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
