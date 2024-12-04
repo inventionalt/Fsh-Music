@@ -127,7 +127,7 @@ export class FMusic {
           break;
         case 'n':
           content += `<text x="${this.size+i*this.size}" y="${(c[1][0]=='d'?4:c[1][1])*(this.size*-0.125)}" font-size="${this.size}" font-family="${this.font}">${this.sym.note[c[1][0]+(this.nsdAuto && c[1][1]>this.nsdAt?'d':'')]??'?'}</text>`;
-          if (c[1][2]=='d') content += `<text x="${1.5*this.size+i*this.size}" y="${(c[1][0]=='d'?5:(Math.floor((c[1][1]+1)/2)*2)-1)*(this.size*-0.125)}" font-size="${this.size}" font-family="${this.font}">\uE1E7</text>`;
+          if (c[1][2]=='d') content += `<text x="${1.5*this.size+i*this.size}" y="${(c[1][0]=='d'?5:((Math.ceil((c[1][1]+1)/2)*2)-1))*(this.size*-0.125)}" font-size="${this.size}" font-family="${this.font}">\uE1E7</text>`;
           break;
         default:
           content += `<text x="${this.size+i*this.size}" y="0" font-size="${this.size}" font-family="${this.font}">?</text>`;
